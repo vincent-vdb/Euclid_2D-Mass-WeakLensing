@@ -1,0 +1,17 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8.5)
+
+#===============================================================================
+# Load macros and functions for Elements-based projects
+#===============================================================================
+
+find_package(ElementsProject)
+
+option(ELEMENTS_PARALLEL "" ON)
+
+#===============================================================================
+# Declare project name and version
+# Example with dependency:
+#                         elements_project(MyProject 1.0 USE Element 3.9)
+#===============================================================================
+
+elements_project(TWOD_MASS_WL_KandSMassMapping 0.1 USE Elements 4.0)
